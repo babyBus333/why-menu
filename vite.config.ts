@@ -14,7 +14,10 @@ const pathResolve = (dir: string): string => {
 // https://vitejs.dev/config/
 export default defineConfig(() => {
   return {
-    base: '/',
+    build: {
+      outDir: 'docs',
+    },
+    base: '/why-menu',
     define: {},
     plugins: [
       react(),
