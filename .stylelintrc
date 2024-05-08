@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-standard"],
+  "customSyntax": "postcss-less",
+  "rules": {
+    "indentation": 2,
+    "function-no-unknown": null,
+    "block-no-empty": null,
+    "no-empty-source": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}

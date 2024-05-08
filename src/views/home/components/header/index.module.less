@@ -1,0 +1,57 @@
+.header {
+  width: 100vw;
+  height: 130px;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 30px;
+  color: #ccc;
+  box-sizing: border-box;
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    animation: turn-around 6s linear infinite;
+
+    @keyframes turn-around {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .tab-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    // .tab {
+    //   line-height: 100px;
+    // }
+
+    .tab-active {
+      font-size: 36px;
+      color: #333;
+    }
+  }
+
+  .search {
+    width: 60px;
+    height: 60px;
+  }
+}
