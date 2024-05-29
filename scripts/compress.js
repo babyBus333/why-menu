@@ -30,7 +30,7 @@ async function compressImage(inputPath, outputPath, quality) {
 
 // 示例：压缩图片
 const inputPath = `${process.cwd()}/src/assets/image/menu` // 输入图片路径
-const quality = 50 // 压缩质量，0-100
+const quality = 20 // 压缩质量，0-100
 
 const compressImageSrc = async (src) => {
   const dirs = fs.readdirSync(src)
