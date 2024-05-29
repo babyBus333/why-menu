@@ -18,7 +18,7 @@ const ShopCar = ({ open, onShopCar, selectMenuNames, onRemoveMenu }: ShopCarProp
 
   const activeMenu = menu.filter((item) => selectMenuNames.includes(item.name))
   const onCopyUrl = () => {
-    const url = `${window.location.origin}?selectMenuNames=${encodeURIComponent(
+    const url = `${window.location.origin}/why-menu/?selectMenuNames=${encodeURIComponent(
       selectMenuNames.join(','),
     )}`
     copy(url)
