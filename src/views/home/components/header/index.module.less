@@ -50,8 +50,39 @@
     }
   }
 
-  .search {
+  .shop-box {
     width: 60px;
     height: 60px;
+    position: relative;
+
+    .shop {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .shop-count {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 60px;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      color: rgb(247 95 68);
+    }
+  }
+
+  .search-box {
+    width: 50%;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
   }
 }
